@@ -1,0 +1,24 @@
+ERROR:
+/home/felipe.emos/llvm/tools/clang/lib/CodeGen/CGStmtOpenACC.cpp:628:6: error: prototype for ‘void clang::CodeGen::CodeGenFunction::EmitACCAggregateAssign(clang::CodeGen::Address, clang::CodeGen::Address, clang::QualType, llvm::function_ref<void(clang::CodeGen::Address, clang::CodeGen::Address)>)’ does not match any in class ‘clang::CodeGen::CodeGenFunction’
+ void CodeGenFunction::EmitACCAggregateAssign(
+      ^
+In file included from /home/felipe.emos/llvm/tools/clang/lib/CodeGen/CGStmtOpenACC.cpp:16:0:
+/home/felipe.emos/llvm/tools/clang/lib/CodeGen/CodeGenFunction.h:3101:8: error: candidate is: void clang::CodeGen::CodeGenFunction::EmitACCAggregateAssign(clang::CodeGen::Address, clang::CodeGen::Address, clang::QualType, const llvm::function_ref<void(clang::CodeGen::Address, clang::CodeGen::Address)>&)
+   void EmitACCAggregateAssign(
+
+
+ ----------------- POSSIBLE FIX ----------------
+CodeGenFunction.h definition:
+  void EmitACCAggregateAssign(
+      Address DestAddr, Address SrcAddr, QualType OriginalType,
+      const llvm::function_ref<void(Address, Address)> &CopyGen);
+
+CGStmtOpenACC.cpp changed definition for not-commented:
+void CodeGenFunction::EmitACCAggregateAssign(
+    Address DestAddr, Address SrcAddr, QualType OriginalType,
+//    const llvm::function_ref<void(Address, Address)> CopyGen) {
+    const llvm::function_ref<void(Address, Address)> &CopyGen) {
+
+
+ ----------------------------------------------
+

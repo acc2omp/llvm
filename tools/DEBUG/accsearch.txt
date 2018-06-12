@@ -1,0 +1,116 @@
+grep: input file ‘./DEBUG/accsearch.txt’ is also the output
+./clang/lib/CodeGen/CGOpenACCRuntime.cpp:        CGF.CGM.getOpenACCRuntime().getUserDefinedReduction(DRD);
+./clang/lib/CodeGen/CGOpenACCRuntime.cpp:    auto &RT = CGF.CGM.getOpenACCRuntime();
+./clang/lib/CodeGen/CGOpenACCRuntime.cpp:    auto &RT = CGF.CGM.getOpenACCRuntime();
+./clang/lib/CodeGen/CGOpenACCRuntime.cpp:  CGM.getOpenACCRuntime().emitOutlinedFunctionCall(CGF, Loc, TaskFunction,
+./clang/lib/CodeGen/CGOpenACCRuntime.cpp:    auto &RT = CGF.CGM.getOpenACCRuntime();
+./clang/lib/CodeGen/CGOpenACCRuntime.cpp:      CGF.CGM.getOpenACCRuntime().emitOutlinedFunctionCall(CGF, Loc, TaskEntry,
+./clang/lib/CodeGen/CGOpenACCRuntime.cpp:              CGF.CGM.getOpenACCRuntime().getUserDefinedReduction(DRD);
+./clang/lib/CodeGen/CGOpenACCRuntime.cpp:    auto &RT = CGF.CGM.getOpenACCRuntime();
+./clang/lib/CodeGen/CGOpenACCRuntime.cpp:          auto &RT = CGF.CGM.getOpenACCRuntime();
+./clang/lib/CodeGen/CGOpenACCRuntime.cpp:    Address SizeAddr = CGM.getOpenACCRuntime().getAddrOfArtificialThreadPrivate(
+./clang/lib/CodeGen/CGOpenACCRuntime.cpp:        CGM.getOpenACCRuntime().getAddrOfArtificialThreadPrivate(
+./clang/lib/CodeGen/CGOpenACCRuntime.cpp:    Address SizeAddr = CGM.getOpenACCRuntime().getAddrOfArtificialThreadPrivate(
+./clang/lib/CodeGen/CGOpenACCRuntime.cpp:  CGM.getOpenACCRuntime().emitSingleReductionCombiner(
+./clang/lib/CodeGen/CGOpenACCRuntime.cpp:    Address SizeAddr = CGM.getOpenACCRuntime().getAddrOfArtificialThreadPrivate(
+./clang/lib/CodeGen/CGOpenACCRuntime.cpp:      auto &RT = CGF.CGM.getOpenACCRuntime();
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:            : CGM.getOpenACCRuntime().translateParameter(FD, Arg));
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:      LocalAddr = CGM.getOpenACCRuntime().getParameterAddress(CGF, Args[Cnt],
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitOutlinedFunctionCall(WrapperCGF, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGM.getOpenACCRuntime().emitReduction(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  auto OutlinedFn = CGF.CGM.getOpenACCRuntime().emitParallelOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitNumThreadsClause(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitProcBindClause(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGF.CGM.getOpenACCRuntime().emitParallelCall(CGF, S.getLocStart(), OutlinedFn,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:      CGF.CGM.getOpenACCRuntime().emitBarrierCall(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitInlinedDirective(*this, ACCD_simd, CodeGen);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  auto &RT = CGM.getOpenACCRuntime();
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:      CGF.CGM.getOpenACCRuntime().emitForStaticFinish(CGF, S.getLocEnd(),
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  auto &RT = CGM.getOpenACCRuntime();
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:      CGF.CGM.getOpenACCRuntime().emitForOrderedIterationEnd(CGF, Loc, IVSize,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  auto &RT = CGM.getOpenACCRuntime();
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitInlinedDirective(*this, ACCD_distribute, CodeGen);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitInlinedDirective(*this, ACCD_distribute, CodeGen);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitInlinedDirective(*this, ACCD_simd, CodeGen);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  auto &RT = CGM.getOpenACCRuntime();
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:        CGM.getOpenACCRuntime().emitBarrierCall(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:          CGF.CGM.getOpenACCRuntime().emitForStaticFinish(CGF, S.getLocEnd(),
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGM.getOpenACCRuntime().emitInlinedDirective(*this, ACCD_for, CodeGen,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGM.getOpenACCRuntime().emitBarrierCall(*this, S.getLocStart(), ACCD_for);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGM.getOpenACCRuntime().emitInlinedDirective(*this, ACCD_simd, CodeGen);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGM.getOpenACCRuntime().emitBarrierCall(*this, S.getLocStart(), ACCD_for);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:      CGF.CGM.getOpenACCRuntime().emitBarrierCall(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitForStaticInit(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:      CGF.CGM.getOpenACCRuntime().emitForStaticFinish(CGF, S.getLocEnd(),
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitInlinedDirective(*this, ACCD_sections, CodeGen,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGM.getOpenACCRuntime().emitBarrierCall(*this, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGM.getOpenACCRuntime().emitBarrierCall(*this, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitInlinedDirective(*this, ACCD_section, CodeGen,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGM.getOpenACCRuntime().emitSingleRegion(*this, CodeGen, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGM.getOpenACCRuntime().emitBarrierCall(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitMasterRegion(*this, CodeGen, S.getLocStart());
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitCriticalRegion(*this,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  Data.Reductions = CGM.getOpenACCRuntime().emitTaskReductionInit(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:      CGF.CGM.getOpenACCRuntime().emitOutlinedFunctionCall(CGF, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:        Address Replacement = CGF.CGM.getOpenACCRuntime().getTaskReductionItem(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:        CGF.CGM.getOpenACCRuntime().emitTaskReductionFixups(CGF, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:        Address Replacement = CGF.CGM.getOpenACCRuntime().getTaskReductionItem(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:        CGF.CGM.getOpenACCRuntime().emitTaskReductionFixups(CGF, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  auto *OutlinedFn = CGM.getOpenACCRuntime().emitTaskOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:      CGF.CGM.getOpenACCRuntime().emitOutlinedFunctionCall(CGF, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  auto *OutlinedFn = CGM.getOpenACCRuntime().emitTaskOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTaskCall(*this, S.getLocStart(), S, OutlinedFn,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitTaskCall(CGF, S.getLocStart(), S, OutlinedFn,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTaskyieldCall(*this, S.getLocStart());
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitBarrierCall(*this, S.getLocStart(), ACCD_barrier);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTaskwaitCall(*this, S.getLocStart());
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:          CGF.CGM.getOpenACCRuntime().emitTaskReductionInit(CGF, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTaskgroupRegion(*this, CodeGen, S.getLocStart());
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitFlush(*this, [&]() -> ArrayRef<const Expr *> {
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  auto &RT = CGM.getOpenACCRuntime();
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:        CGM.getOpenACCRuntime().emitBarrierCall(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitInlinedDirective(*this, ACCD_distribute, CodeGen);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:      CGM.getOpenACCRuntime().emitDoacrossOrdered(*this, DC);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:      CGM.getOpenACCRuntime().emitOutlinedFunctionCall(CGF, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitOrderedRegion(*this, CodeGen, S.getLocStart(), !C);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitFlush(CGF, llvm::None, Loc);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitFlush(CGF, llvm::None, Loc);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitFlush(CGF, llvm::None, Loc);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitFlush(CGF, llvm::None, Loc);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitInlinedDirective(*this, ACCD_atomic, CodeGen);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTargetOutlinedFunction(S, ParentName, Fn, FnID,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTargetCall(CGF, S, Fn, FnID, IfCond, Device);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  auto OutlinedFn = CGF.CGM.getOpenACCRuntime().emitTeamsOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitNumTeamsClause(CGF, NumTeams, ThreadLimit,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGF.CGM.getOpenACCRuntime().emitTeamsCall(CGF, S, S.getLocStart(), OutlinedFn,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitInlinedDirective(CGF, ACCD_distribute,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitInlinedDirective(CGF, ACCD_distribute,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitInlinedDirective(CGF, ACCD_distribute,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitInlinedDirective(CGF, ACCD_simd,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitInlinedDirective(CGF, ACCD_distribute,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitInlinedDirective(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitInlinedDirective(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitInlinedDirective(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitCancellationPointCall(*this, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitCancelCall(*this, S.getLocStart(), IfCond,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitInlinedDirective(CGF, ACCD_target_data,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTargetDataCalls(*this, S, IfCond, Device, RCG,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTargetDataStandAloneCall(*this, S, IfCond, Device);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTargetDataStandAloneCall(*this, S, IfCond, Device);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:      CGF.CGM.getOpenACCRuntime().emitTaskLoopCall(CGF, S.getLocStart(), S,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGF.CGM.getOpenACCRuntime().emitInlinedDirective(CGF, ACCD_taskloop,
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:    CGM.getOpenACCRuntime().emitTaskgroupRegion(
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitTargetDataStandAloneCall(*this, S, IfCond, Device);
+./clang/lib/CodeGen/CGStmtOpenACC.cpp:  CGM.getOpenACCRuntime().emitInlinedDirective(
+./clang/lastcompilation.log:/opt/clang-ykt/llvm-lsc/tools/clang/lib/CodeGen/CGOpenACCRuntime.cpp:765:17: error: no member named 'getOpenACCRuntime' in 'clang::CodeGen::CodeGenModule'
+./clang/lastcompilation.log:        CGF.CGM.getOpenACCRuntime().getUserDefinedReduction(DRD);

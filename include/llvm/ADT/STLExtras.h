@@ -103,6 +103,7 @@ public:
   function_ref() = default;
   function_ref(std::nullptr_t) {}
 
+// TODO acc2mp using function_ref with wrong param? Not always a PRAGMAExecutableDirective
   template <typename Callable>
   function_ref(Callable &&callable,
                typename std::enable_if<

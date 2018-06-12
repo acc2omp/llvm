@@ -1,0 +1,132 @@
+grep: input file ‘./DEBUG/ompsearch.txt’ is also the output
+./clang/lib/Driver/Driver.cpp:Driver::OpenMPRuntimeKind Driver::getOpenMPRuntime(const ArgList &Args) const {
+./clang/lib/Driver/Driver.cpp:        OpenMPRuntimeKind OpenMPKind = getOpenMPRuntime(C.getInputArgs());
+./clang/lib/Driver/ToolChains/MSVC.cpp:    switch (TC.getDriver().getOpenMPRuntime(Args)) {
+./clang/lib/Driver/ToolChains/CommonArgs.cpp:  switch (TC.getDriver().getOpenMPRuntime(Args)) {
+./clang/lib/Driver/ToolChains/Clang.cpp:    switch (D.getOpenMPRuntime(Args)) {
+./clang/lib/CodeGen/CodeGenModule.cpp:    getOpenMPRuntime().emitDeclareSimdFunction(FD, F);
+./clang/lib/CodeGen/CodeGenModule.cpp:    if (auto InitFunction = getOpenMPRuntime().emitThreadPrivateVarDefinition(
+./clang/lib/CodeGen/CodeGenFunction.cpp:    CGM.getOpenMPRuntime().functionFinished(*this);
+./clang/lib/CodeGen/CGDeclCXX.cpp:      (void)CGM.getOpenMPRuntime().emitThreadPrivateVarDefinition(
+./clang/lib/CodeGen/CGOpenMPRuntimeNVPTX.cpp:      static_cast<CGOpenMPRuntimeNVPTX &>(CGF.CGM.getOpenMPRuntime())
+./clang/lib/CodeGen/CGOpenMPRuntimeNVPTX.cpp:      static_cast<CGOpenMPRuntimeNVPTX &>(CGF.CGM.getOpenMPRuntime())
+./clang/lib/CodeGen/CGOpenMPRuntimeNVPTX.cpp:      *(static_cast<CGOpenMPRuntimeNVPTX *>(&CGM.getOpenMPRuntime()));
+./clang/lib/CodeGen/CGOpenMPRuntimeNVPTX.cpp:  CGM.getOpenMPRuntime().emitOutlinedFunctionCall(
+./clang/lib/CodeGen/CGOpenMPRuntimeNVPTX.cpp:  CGM.getOpenMPRuntime().emitOutlinedFunctionCall(
+./clang/lib/CodeGen/CGExpr.cpp:  Addr = CGF.CGM.getOpenMPRuntime().getAddrOfThreadPrivate(CGF, VD, Addr, Loc);
+./clang/lib/CodeGen/CodeGenModule.h:  CGOpenMPRuntime &getOpenMPRuntime() {
+./clang/lib/CodeGen/CGOpenMPRuntime.cpp:        CGF.CGM.getOpenMPRuntime().getUserDefinedReduction(DRD);
+./clang/lib/CodeGen/CGOpenMPRuntime.cpp:    auto &RT = CGF.CGM.getOpenMPRuntime();
+./clang/lib/CodeGen/CGOpenMPRuntime.cpp:    auto &RT = CGF.CGM.getOpenMPRuntime();
+./clang/lib/CodeGen/CGOpenMPRuntime.cpp:  CGM.getOpenMPRuntime().emitOutlinedFunctionCall(CGF, Loc, TaskFunction,
+./clang/lib/CodeGen/CGOpenMPRuntime.cpp:    auto &RT = CGF.CGM.getOpenMPRuntime();
+./clang/lib/CodeGen/CGOpenMPRuntime.cpp:      CGF.CGM.getOpenMPRuntime().emitOutlinedFunctionCall(CGF, Loc, TaskEntry,
+./clang/lib/CodeGen/CGOpenMPRuntime.cpp:              CGF.CGM.getOpenMPRuntime().getUserDefinedReduction(DRD);
+./clang/lib/CodeGen/CGOpenMPRuntime.cpp:    auto &RT = CGF.CGM.getOpenMPRuntime();
+./clang/lib/CodeGen/CGOpenMPRuntime.cpp:          auto &RT = CGF.CGM.getOpenMPRuntime();
+./clang/lib/CodeGen/CGOpenMPRuntime.cpp:    Address SizeAddr = CGM.getOpenMPRuntime().getAddrOfArtificialThreadPrivate(
+./clang/lib/CodeGen/CGOpenMPRuntime.cpp:        CGM.getOpenMPRuntime().getAddrOfArtificialThreadPrivate(
+./clang/lib/CodeGen/CGOpenMPRuntime.cpp:    Address SizeAddr = CGM.getOpenMPRuntime().getAddrOfArtificialThreadPrivate(
+./clang/lib/CodeGen/CGOpenMPRuntime.cpp:  CGM.getOpenMPRuntime().emitSingleReductionCombiner(
+./clang/lib/CodeGen/CGOpenMPRuntime.cpp:    Address SizeAddr = CGM.getOpenMPRuntime().getAddrOfArtificialThreadPrivate(
+./clang/lib/CodeGen/CGOpenMPRuntime.cpp:      auto &RT = CGF.CGM.getOpenMPRuntime();
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:            : CGM.getOpenMPRuntime().translateParameter(FD, Arg));
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:      LocalAddr = CGM.getOpenMPRuntime().getParameterAddress(CGF, Args[Cnt],
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitOutlinedFunctionCall(WrapperCGF, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGM.getOpenMPRuntime().emitReduction(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  auto OutlinedFn = CGF.CGM.getOpenMPRuntime().emitParallelOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitNumThreadsClause(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitProcBindClause(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGF.CGM.getOpenMPRuntime().emitParallelCall(CGF, S.getLocStart(), OutlinedFn,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:      CGF.CGM.getOpenMPRuntime().emitBarrierCall(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitInlinedDirective(*this, OMPD_simd, CodeGen);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  auto &RT = CGM.getOpenMPRuntime();
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:      CGF.CGM.getOpenMPRuntime().emitForStaticFinish(CGF, S.getLocEnd(),
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  auto &RT = CGM.getOpenMPRuntime();
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:      CGF.CGM.getOpenMPRuntime().emitForOrderedIterationEnd(CGF, Loc, IVSize,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  auto &RT = CGM.getOpenMPRuntime();
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitInlinedDirective(*this, OMPD_distribute, CodeGen);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitInlinedDirective(*this, OMPD_distribute, CodeGen);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitInlinedDirective(*this, OMPD_simd, CodeGen);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  auto &RT = CGM.getOpenMPRuntime();
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:        CGM.getOpenMPRuntime().emitBarrierCall(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:          CGF.CGM.getOpenMPRuntime().emitForStaticFinish(CGF, S.getLocEnd(),
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGM.getOpenMPRuntime().emitInlinedDirective(*this, OMPD_for, CodeGen,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGM.getOpenMPRuntime().emitBarrierCall(*this, S.getLocStart(), OMPD_for);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGM.getOpenMPRuntime().emitInlinedDirective(*this, OMPD_simd, CodeGen);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGM.getOpenMPRuntime().emitBarrierCall(*this, S.getLocStart(), OMPD_for);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:      CGF.CGM.getOpenMPRuntime().emitBarrierCall(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitForStaticInit(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:      CGF.CGM.getOpenMPRuntime().emitForStaticFinish(CGF, S.getLocEnd(),
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitInlinedDirective(*this, OMPD_sections, CodeGen,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGM.getOpenMPRuntime().emitBarrierCall(*this, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGM.getOpenMPRuntime().emitBarrierCall(*this, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitInlinedDirective(*this, OMPD_section, CodeGen,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGM.getOpenMPRuntime().emitSingleRegion(*this, CodeGen, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGM.getOpenMPRuntime().emitBarrierCall(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitMasterRegion(*this, CodeGen, S.getLocStart());
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitCriticalRegion(*this,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  Data.Reductions = CGM.getOpenMPRuntime().emitTaskReductionInit(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:      CGF.CGM.getOpenMPRuntime().emitOutlinedFunctionCall(CGF, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:        Address Replacement = CGF.CGM.getOpenMPRuntime().getTaskReductionItem(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:        CGF.CGM.getOpenMPRuntime().emitTaskReductionFixups(CGF, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:        Address Replacement = CGF.CGM.getOpenMPRuntime().getTaskReductionItem(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:        CGF.CGM.getOpenMPRuntime().emitTaskReductionFixups(CGF, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  auto *OutlinedFn = CGM.getOpenMPRuntime().emitTaskOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:      CGF.CGM.getOpenMPRuntime().emitOutlinedFunctionCall(CGF, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  auto *OutlinedFn = CGM.getOpenMPRuntime().emitTaskOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTaskCall(*this, S.getLocStart(), S, OutlinedFn,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitTaskCall(CGF, S.getLocStart(), S, OutlinedFn,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTaskyieldCall(*this, S.getLocStart());
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitBarrierCall(*this, S.getLocStart(), OMPD_barrier);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTaskwaitCall(*this, S.getLocStart());
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:          CGF.CGM.getOpenMPRuntime().emitTaskReductionInit(CGF, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTaskgroupRegion(*this, CodeGen, S.getLocStart());
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitFlush(*this, [&]() -> ArrayRef<const Expr *> {
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  auto &RT = CGM.getOpenMPRuntime();
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:        CGM.getOpenMPRuntime().emitBarrierCall(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitInlinedDirective(*this, OMPD_distribute, CodeGen);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:      CGM.getOpenMPRuntime().emitDoacrossOrdered(*this, DC);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:      CGM.getOpenMPRuntime().emitOutlinedFunctionCall(CGF, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitOrderedRegion(*this, CodeGen, S.getLocStart(), !C);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitFlush(CGF, llvm::None, Loc);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitFlush(CGF, llvm::None, Loc);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitFlush(CGF, llvm::None, Loc);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitFlush(CGF, llvm::None, Loc);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitInlinedDirective(*this, OMPD_atomic, CodeGen);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTargetOutlinedFunction(S, ParentName, Fn, FnID,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTargetCall(CGF, S, Fn, FnID, IfCond, Device);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  auto OutlinedFn = CGF.CGM.getOpenMPRuntime().emitTeamsOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitNumTeamsClause(CGF, NumTeams, ThreadLimit,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGF.CGM.getOpenMPRuntime().emitTeamsCall(CGF, S, S.getLocStart(), OutlinedFn,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitInlinedDirective(CGF, OMPD_distribute,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitInlinedDirective(CGF, OMPD_distribute,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitInlinedDirective(CGF, OMPD_distribute,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitInlinedDirective(CGF, OMPD_simd,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitInlinedDirective(CGF, OMPD_distribute,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitInlinedDirective(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitInlinedDirective(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitInlinedDirective(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitCancellationPointCall(*this, S.getLocStart(),
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitCancelCall(*this, S.getLocStart(), IfCond,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitInlinedDirective(CGF, OMPD_target_data,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTargetDataCalls(*this, S, IfCond, Device, RCG,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTargetDataStandAloneCall(*this, S, IfCond, Device);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTargetDataStandAloneCall(*this, S, IfCond, Device);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTargetOutlinedFunction(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:      CGF.CGM.getOpenMPRuntime().emitTaskLoopCall(CGF, S.getLocStart(), S,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGF.CGM.getOpenMPRuntime().emitInlinedDirective(CGF, OMPD_taskloop,
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:    CGM.getOpenMPRuntime().emitTaskgroupRegion(
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitTargetDataStandAloneCall(*this, S, IfCond, Device);
+./clang/lib/CodeGen/CGStmtOpenMP.cpp:  CGM.getOpenMPRuntime().emitInlinedDirective(
+./clang/lib/CodeGen/CGDecl.cpp:  getOpenMPRuntime().emitUserDefinedReduction(CGF, D);
+./clang/include/clang/Driver/Driver.h:  OpenMPRuntimeKind getOpenMPRuntime(const llvm::opt::ArgList &Args) const;
